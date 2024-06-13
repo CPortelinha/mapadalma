@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'astrologicus';
+  src: url(../fonts/Astrologicus.ttf) format('openatype');
+}
+
+@font-face {
+  font-family: 'castro';
+  src: url(../fonts/castroestevez.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url(../fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face{ 
+  font-family:'sriracha';
+  src: url(../fonts/Sriracha-Regular.ttf) format('opentype');
+  }
+
+/* https://color.adobe.com/pt/mythemes  mapadalma */
+:root{
+  --cor0:#EAE6F4;
+  --cor1:#89CFF0;
+  --cor2:#5D3A9B;
+  --cor3:#4A4A4A;
+  --cor4:#D4AF37;
+  --cor5:#000000;
+  --cor6:#0000000e;
+
+  --font1:'astrologicus', Arial, Verdana;
+  --font2:'castro', Arial, Verdana;
+  --font3:'lato', Arial, Verdana;
+  --font4:'sriracha' , Arial, Verdana;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:var(--cor0);
+  min-height: 100vh;
+  font-family: var(--font4);
+}
+
+header{
+background-color: var(--cor2);
+color: white;
+text-align: center;
+}
+
+header >h1{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--font2);
+  font-size: 15vh;
+  text-shadow: 5px 5px 0 rgba(0,0,0, 0.300);
+}
+
+header >p{
+  padding-bottom: 2rem;
+  text-align: justify;
+  padding: 1rem 3rem;
+}
+
+nav{
+  background-color: var(--cor1);
+  color: var(--cor1);
+  font-family: var(--font3);
+  padding: .5rem;
+  text-align: center;  
+  box-shadow: 0 7px 7px rgba(0,0,0, 0.322);
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--cor2);
+  padding: .5rem;
+  font-weight: normal;
+  margin: auto;  
+}
+
+nav a:hover{
+  color: var(--cor4);  
+  transition-duration: -4s;
+}
+
+footer{
+  background-color: var(--cor2);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+
