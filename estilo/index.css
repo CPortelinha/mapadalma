@@ -10,18 +10,6 @@
   src: url(../fonts/castroestevez.otf) format('opentype');
 }
 
-@charset "UTF-8";
-
-@font-face {
-  font-family: 'astrologicus';
-  src: url(../fonts/Astrologicus.ttf) format('openatype');
-}
-
-@font-face {
-  font-family: 'castro';
-  src: url(../fonts/castroestevez.otf) format('opentype');
-}
-
 @font-face {
   font-family: 'lato';
   src: url(../fonts/Lato-Regular.ttf) format('opentype');
@@ -92,7 +80,7 @@ nav a{
 }
 
 nav a:hover{
-  color: var(--cor3);  
+  text-decoration: underline;;  
   transition-duration: -4s;
 }
 
@@ -124,21 +112,6 @@ section.imagem{
   background-attachment: fixed; /*efeito parallax*/
 }
 
-section.imagem >h2{
-  width: 50rem ;
-  padding-top: 1rem;
-  padding-left: 2rem;
-  background-color: var(--cor6);
-  text-shadow: .5px .5px 0 black;
-}
-
-section.imagem >h3{
-  width: 50rem;
-  padding-left: 2rem;
-  background-color: var(--cor6);
-  text-shadow: .5px .5px 0 black;
-}
-
 section.imagem >p{
   width: 50rem;
   padding-left: 2rem;
@@ -148,25 +121,10 @@ section.imagem >p{
 }
 
 section#img1{
-  background-image: url(../imagens/hermetico/img1.jpg);
-  
-}
+  background-image: url(../imagens/img1.jpg);  
+} 
 
-section#img2{
-  background-image: url(../imagens/hermetico/img2.jpg);
- 
-}
-
-section#img3{
-  background-image: url(../imagens/hermetico/img3.jpg);
-  
-}
-
-section#img4{
-  background-image: url(../imagens/hermetico/img4.jpg);
- }
-
-section#img1, section#img2, section#img3, section#img4 {
+section#img1 {
   background-size: 80vw auto; /* Largura é 50% da viewport */
   background-position: left center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Não repete a imagem */
