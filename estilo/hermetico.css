@@ -58,7 +58,7 @@ header >h1{
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: var(--font2);
-  font-size: 15vh;
+  font-size: 16vh;
   text-shadow: 5px 5px 0 rgba(0,0,0, 0.300);
 }
 
@@ -66,6 +66,7 @@ nav{
   background-color: var(--cor1);
   color: var(--cor1);
   font-family: var(--font3);
+  font-size: 1.2rem;  
   padding: .5rem;
   text-align: center;  
   box-shadow: 0 7px 7px rgba(0,0,0, 0.322);
@@ -77,6 +78,7 @@ nav a{
   padding: .5rem;
   font-weight: normal;
   margin: auto;  
+  width: 5rem; /* Limita a largura máxima do link a 10rem */
 }
 
 nav a:hover{
@@ -89,6 +91,7 @@ section{
   padding-bottom: 5rem;
   line-height: 2rem;
   padding-left: 2rem;  
+  font-size: 1.2rem;
 }
 
 section p {

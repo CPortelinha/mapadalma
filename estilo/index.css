@@ -58,7 +58,7 @@ header >h1{
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: var(--font2);
-  font-size: 15vh;
+  font-size: 16vh;
   text-shadow: 5px 5px 0 rgba(0,0,0, 0.300);
 }
 
@@ -66,6 +66,7 @@ nav{
   background-color: var(--cor1);
   color: var(--cor1);
   font-family: var(--font3);
+  font-size: 1.2rem;
   padding: .5rem;
   text-align: center;  
   box-shadow: 0 7px 7px rgba(0,0,0, 0.322);
@@ -94,6 +95,7 @@ section{
 section p {
   width: 50rem;
   margin: 4rem;
+  font-size: 1.2rem;
 }
 
 section .normal{
