@@ -97,18 +97,52 @@ section h2{
 table{
   width: 92rem;
   border-collapse: collapse;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  position: relative;
 }
 
-.titulo{
+caption{
+  font-family: var(--font3);
+  padding: 1em;
+  
+}
+
+thead >tr >th {
+  position: sticky;
+  top: -1px;
+  background-color: var(--cor2);
+}
+
+tbody > tr:nth-child(2n) /* (odd) ou (even) - par ou impar */ {
+  background-color: var(--cor1);
+}
+
+th{
   font-family: var(--font3);
   font-weight: bold;
+  border: .01rem solid black;
+ text-align: center;
+ padding: .5rem;
+ vertical-align: center; 
+ background-color: var(--cor2);
+ color: white;
 }
 
 td{
+  font-family: var(--font3);
  border: .01rem solid black;
  text-align: center;
  padding: .5rem;
+ vertical-align: center;
 }
+
+tfoot th{
+background-color: var(--cor4);
+color: var(--cor3);
+}
+
+
 
 
 footer{
