@@ -1,10 +1,38 @@
 @charset "UTF-8";
 
-iframe{
-  width: 96vw;
-  height: 50rem;
-  border: none;
+/*section.carneiro{
+  background-image: url(../imagens/theGardeninGiverny.jpg);
+}*/
+
+h2{
+width: 50rem ;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  background-color: var(--cor6);
+  text-shadow: .5px .5px 0 black;
+  text-align: center;
 }
 
-section#carneiro{
-  background-image: url(../imagens/theGardeninGiverny.jpg);
+h3{
+  width: 50rem;
+  padding-left: 2rem;  
+  background-color: var(--cor6);
+  text-shadow: .5px .5px 0 black;
+}
+
+.mapa {
+  display: grid;
+  grid-template-columns: 1fr auto; /* A imagem ocupa o espaço mínimo necessário à direita */
+}
+
+ img.mapa {
+  justify-self: end; /* Alinha a imagem à direita */
+}
+
+section.carneiro >p{
+  width: 50rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--cor6);
+  text-shadow: .5px .5px 0 black;
+}
