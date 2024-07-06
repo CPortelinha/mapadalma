@@ -1,14 +1,99 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'astrologicus';
+  src: url(../fonts/Astrologicus.ttf) format('openatype');
+}
+
+@font-face {
+  font-family: 'castro';
+  src: url(../fonts/castroestevez.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url(../fonts/Lato-Regular.ttf) format('opentype');
+}
+
+@font-face{ 
+  font-family:'sriracha';
+  src: url(../fonts/Sriracha-Regular.ttf) format('opentype');
+  }
+
+/* https://color.adobe.com/pt/mythemes  mapadalma */
+:root{
+  --cor0:#EAE6F4;
+  --cor1:#89CFF0;
+  --cor2:#5D3A9B;
+  --cor3:#4A4A4A;
+  --cor4:#D4AF37;
+  --cor5:#000000;
+  --cor6:#5e3a9b00;
+  ;
+
+  --font1:'astrologicus', Arial, Verdana;
+  --font2:'castro', Arial, Verdana;
+  --font3:'lato', Arial, Verdana;
+  --font4:'sriracha' , Arial, Verdana;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:var(--cor0);
+  min-height: 100vh;
+  font-family: var(--font4);
+  }
+
+header{
+background-color: var(--cor2);
+color: white;
+text-align: center;
+}
+
+header >h1{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--font2);
+  font-size: 16vh;
+  text-shadow: 5px 5px 0 rgba(0,0,0, 0.300);
+}
+
+nav{
+  background-color: var(--cor1);
+  color: var(--cor1);
+  font-family: var(--font3);
+  font-size: 1.2rem;
+  padding: .5rem;
+  text-align: center;  
+  box-shadow: 0 7px 7px rgba(0,0,0, 0.322);
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--cor2);
+  padding: .5rem;
+  font-weight: normal;
+  margin: auto;  
+}
+
+nav a:hover{
+  text-decoration: underline;;  
+  transition-duration: -4s;
+}
+
 /*section.carneiro{
   background-image: url(../imagens/theGardeninGiverny.jpg);
 }*/
 
 h2{
 width: 50rem ;
-  padding-top: 1rem;
-  padding-left: 2rem;
+  padding: 1rem;  
   background-color: var(--cor6);
+  margin: auto;
   text-shadow: .5px .5px 0 black;
   text-align: center;
 }
@@ -22,11 +107,12 @@ h3{
 
 .mapa {
   display: grid;
-  grid-template-columns: 1fr auto; /* A imagem ocupa o espaço mínimo necessário à direita */
+  grid-template-columns: 1fr auto; /* A primeira coluna ocupa o espaço disponível, a segunda só o necessário */
 }
 
- img.mapa {
-  justify-self: end; /* Alinha a imagem à direita */
+.mapa img { 
+  justify-self: end; /* Alinha a imagem ao final da célula da grade */
+  align-self: center; /* Opcional: Alinha a imagem verticalmente ao centro da célula */
 }
 
 section.carneiro >p{
