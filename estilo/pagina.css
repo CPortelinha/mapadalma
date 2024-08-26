@@ -115,10 +115,75 @@ h3{
   align-self: center; /* Opcional: Alinha a imagem verticalmente ao centro da célula */
 }
 
-section.carneiro >p{
+section.signo >p{
   width: 50rem;
   padding-left: 2rem;
   padding-bottom: 2rem;
   background-color: var(--cor6);
   text-shadow: .5px .5px 0 black;
+}
+
+section{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 2rem;
+  padding-left: 2rem;  
+}
+
+section p {
+  width: 80rem;
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+section .normal{
+  background-color: var(--cor0);
+  color: var(--cor3);
+  text-shadow:.5px .5px 0 black;
+ }
+
+
+section.imagem{
+  background-color: var(--cor0);
+  color: var(--cor6);
+  box-shadow: insect 6px 6px 13px 0 black;
+  background-size: cover;
+  margin: 2rem;
+  background-attachment: fixed; /*efeito parallax*/
+}
+
+section.imagem >p{
+  width: 50rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-color: var(--cor6);
+  text-shadow: .5px .5px 0 black;
+}
+
+section#img1{
+  background-image: url(../imagens/campofloresCarneiro.jpg);  
+} 
+
+section#img1 {
+  background-size: 80vw auto; /* Largura é 80% da viewport */
+  background-position: left center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  padding-left: 4rem;
+}
+
+footer{
+  background-color: var(--cor2);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
 }
